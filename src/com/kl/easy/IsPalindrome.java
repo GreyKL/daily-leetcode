@@ -14,7 +14,7 @@ public class IsPalindrome {
         例如，121 是回文，而 123 不是。
          */
         int x = 1073773701;
-        System.out.println(isPalindrome(x));
+        System.out.println(isPalindrome1(x));
     }
 
     public static boolean isPalindrome(int x) {
@@ -29,4 +29,20 @@ public class IsPalindrome {
         long l = (long)x*2;
         return y+x==l;
     }
+
+
+    public static boolean isPalindrome1(int x) {
+        if(x < 0)
+            return false;
+        int cur = 0;
+        int num = x;
+        while(num != 0) {
+            int k = num % 10;
+            int l = cur * 10;
+            cur = l + k;
+            num /= 10;
+        }
+        return cur == x;
+    }
+
 }
