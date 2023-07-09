@@ -16,7 +16,7 @@ public class BinaryTreeDemo {
         BinaryNode node3=new BinaryNode(3,"卢俊义");
         BinaryNode node4=new BinaryNode(4,"林冲");
         BinaryNode node5=new BinaryNode(5,"武松");
-        BinaryNode node6=new BinaryNode(6,"鲁智深");
+        BinaryNode node6=new BinaryNode(6,"鲁智 深");
         BinaryNode node7=new BinaryNode(7,"杨志");
 
         //说明，我们先手动创建该二叉树，后面我们学习递归的方式创建而常数
